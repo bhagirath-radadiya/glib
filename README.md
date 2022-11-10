@@ -24,5 +24,9 @@ B) Django rest framwork side api
 functionality for user :
 
 can register, login, and logout.
-raise a complaint.
-view list of complaint created by self.
+raise a comaplint, view list of complaint and delete or update it.
+
+functionality for worker:
+can login and logout.
+view list of complaint and filter it according to status.
+update complaint status.
