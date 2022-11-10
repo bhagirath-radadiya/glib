@@ -104,7 +104,6 @@ class WorkerComplaintViewSet(mixins.ListModelMixin,
     def update(self, request, *args, **kwargs):
         obj = self.get_object()
         request.data['updated_by'] = request.user.id
-        import pdb;pdb.set_trace()
         serializer = ComplaintMasterSerializer(obj, data = request.data, partial=True)
         if serializer.is_valid():
             serializer.save()
